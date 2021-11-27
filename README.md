@@ -1,7 +1,6 @@
 # MultiChiefWorkflow
-<p>MultiChief is an experimental microservice-based ERP system for construction industry. <p/>
-<p><b>MultiChiefWorkflow</b> is a microservice that is responsible for preparing data (DTO) for MultiChiefMain (main service <a href="https://github.com/LevGoryachev/MultiChiefMain">MultiChiefMain</a>).</p> 
-<p>Generally, the whole MultiChief web-app is intended for on-line and off-line interaction between departments and employees.</p>
+<p><b>MultiChief</b> is an experimental microservice-based ERP system for construction industry (on-line and off-line interaction between departments and employees). <p/>
+<p><b>MultiChiefConstruction</b> is a microservice that is responsible for preparing data (DTO) for orchestrators (modules of <a href="https://github.com/LevGoryachev/MultiChiefMain">MultiChiefMain</a>).</p> 
 <p><b>Summary: Java 11, Spring-Boot, Spring Security, Spring Data JPA (Hibernate)</b></p>
 <p><b>Database: PostgreSQL</b></p>
 
@@ -22,4 +21,4 @@
 <li>completion - completed works can be related with "construction" through bills of works (bow) to awoid different constructions in a work completion certificate</li>
 </ul>
 
-<p>Free software for educational purposes. Author: Lev Goryachev.</p>
+<p>MultiChief (ERP). License: GNU GPL v3. Copyright (C) 2021 Lev Goryachev.</p>
