@@ -11,8 +11,18 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    implementation {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+        exclude group: 'org.apache.tomcat'
+    }
+}
+
 dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.3'
+    implementation group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.3'
+
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
